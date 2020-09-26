@@ -53,14 +53,16 @@ div.hero h2 {
     margin: 0;
 }
 
+/*  This is an A11y Change */
+/* Color is changed for accessibility*/
 div.hero h1 {
-    color: #fff;
+    color: ##2B3250;
     font-size: 4.2em;
     margin-bottom: 20px;
 }
 
 div.hero h2 {
-    color: #4d5791;
+    color: ##2B3250;
 }
 
 .container {
