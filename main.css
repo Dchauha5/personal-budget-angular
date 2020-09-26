@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+
+/* This is an SEO Change */
+/* Accessibility is one of the criteria for SEO */
+/* changed the body text font size */
 body {
     font-size: 13px;
     font-family: Tahoma, Arial;
