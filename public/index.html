@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Budget</title>
-    <link rel="stylesheet" href="/reset.css">
-    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="main.css" />
+    
 </head>
 <body>
 
@@ -128,7 +129,9 @@
             '#ff6384',
             '#36a2eb',
             '#fd6b19',
-
+        'black',
+        'green',
+        "red"
             ],
 
 
@@ -154,10 +157,10 @@
     }
 
     function getBudget() {
-        axios.get('/budget')
+        axios.get('http://localhost:3000/budget')
         .then(function(res)
         {
-            console.log(res)
+            console.log(res.data);
 
             for(var i = 0 ; i < res.data.myBudget.length; i++)
             {
