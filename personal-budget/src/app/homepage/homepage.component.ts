@@ -22,16 +22,9 @@ public dataSource =  {
       'green',
       'red'
           ],
+}  ],
 
-
-  }
-
-
-
-  ],
-
-  labels: [
-  ]
+  labels: []
 };
 
   constructor(private http: HttpClient) { }
@@ -39,7 +32,7 @@ public dataSource =  {
   ngOnInit(): void {
     this.http.get('http://localhost:3000/budget')
     .subscribe((res: any) => {
-      for(var i = 0 ; i < res.data.myBudget.length; i++)
+      for(var i = 0 ; i < res.myBudget.length; i++)
       {
 
           this.dataSource.datasets[0].data[i] = res.myBudget[i].budget;
